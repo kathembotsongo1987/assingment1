@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY CRUD TASK LIST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>My Task Planner</h1>
+        <form name="task_form" id="new_task_form" class="new_task_form">
+            <input type="text" name="new_task_input" class="task_input" id="new_task_input" placeholder="what are you planning">
+            <input type="submit" id="submit" value="add Tast" class="taskadd">
+        </form>
+    </header>
+    <main>
+        <section>
+            <h2>My current Task</h2>
+            <div id="tasks" class="tasks">
+
+            </div>
+        </section>
+    </main>
+    
+    <script src="index.js"></script>
+</body>
+</html>
