@@ -22,7 +22,15 @@ h1{
     font-size: 3rem;
     font-style: normal;
     font-weight: 300;
-    color: whitesmoke;
+    color: rgb(8, 8, 132);
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+h2{
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 100;
     margin-bottom: 1rem;
     text-align: center;
 }
@@ -70,3 +78,10 @@ input, button{
     cursor: pointer;
     transition: 0.4s;
 }
+
+.task .action .delete{
+
+}
+
+
+/* Css Login */
