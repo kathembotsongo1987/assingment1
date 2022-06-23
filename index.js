@@ -8,10 +8,10 @@ window.addEventListener('load', ()=> {
 
          //Javascript VALIDATION
         const tasks = input.value;
-        //  if (tasks == "") {
-        //     window.alert("Please enter some Tasks");
-        //     return false;            
-        // } 
+         if (tasks == "") {
+          window.alert("Please enter some Tasks");
+           return false;            
+        } 
 
          //Javascript numbering order
         counter++;
