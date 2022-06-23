@@ -1,0 +1,139 @@
+
+hp@DESKTOP-BCC1VGS MINGW64 /d/STATHM/BBIT2/Y2.2/API/codes/Demo1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .project_requirement.swo
+        new file:   .project_requirement.swp
+        modified:   index.html
+        modified:   index.js
+        modified:   style.css
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   index.html
+        modified:   index.js
+
+
+hp@DESKTOP-BCC1VGS MINGW64 /d/STATHM/BBIT2/Y2.2/API/codes/Demo1 (master)
+$ git add .
+
+hp@DESKTOP-BCC1VGS MINGW64 /d/STATHM/BBIT2/Y2.2/API/codes/Demo1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .project_requirement.swo
+        new file:   .project_requirement.swp
+        modified:   index.html
+        modified:   index.js
+        modified:   style.css
+
+
+hp@DESKTOP-BCC1VGS MINGW64 /d/STATHM/BBIT2/Y2.2/API/codes/Demo1 (master)
+$ touch git.txt
+
+hp@DESKTOP-BCC1VGS MINGW64 /d/STATHM/BBIT2/Y2.2/API/codes/Demo1 (master)
+$ touch readme.txt
+
+hp@DESKTOP-BCC1VGS MINGW64 /d/STATHM/BBIT2/Y2.2/API/codes/Demo1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .project_requirement.swo
+        new file:   .project_requirement.swp
+        modified:   index.html
+        modified:   index.js
+        modified:   style.css
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        git.txt
+        readme.txt
+
+
+hp@DESKTOP-BCC1VGS MINGW64 /d/STATHM/BBIT2/Y2.2/API/codes/Demo1 (master)
+$ git add .
+
+hp@DESKTOP-BCC1VGS MINGW64 /d/STATHM/BBIT2/Y2.2/API/codes/Demo1 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   .project_requirement.swo
+        new file:   .project_requirement.swp
+        new file:   git.txt
+        modified:   index.html
+        modified:   index.js
+        new file:   readme.txt
+        modified:   style.css
+
+
+hp@DESKTOP-BCC1VGS MINGW64 /d/STATHM/BBIT2/Y2.2/API/codes/Demo1 (master)
+$ git commit -m "added git file"
+[master 0bfe278] added git file
+ 7 files changed, 278 insertions(+), 199 deletions(-)
+ create mode 100644 .project_requirement.swo
+ create mode 100644 .project_requirement.swp
+ create mode 100644 git.txt
+ rewrite index.html (92%)
+ rewrite index.js (66%)
+ create mode 100644 readme.txt
+ rewrite style.css (83%)
+
+hp@DESKTOP-BCC1VGS MINGW64 /d/STATHM/BBIT2/Y2.2/API/codes/Demo1 (master)
+$ git commit -m "added readme file"
+On branch master
+nothing to commit, working tree clean
+
+hp@DESKTOP-BCC1VGS MINGW64 /d/STATHM/BBIT2/Y2.2/API/codes/Demo1 (master)
+$ git remote add origin https://github.com/kathembotsongo1987/assingment1.git
+error: remote origin already exists.
+
+hp@DESKTOP-BCC1VGS MINGW64 /d/STATHM/BBIT2/Y2.2/API/codes/Demo1 (master)
+$ git remote add origin https://github.com/kathembotsongo1987/API_asignment1.git
+error: remote origin already exists.
+
+hp@DESKTOP-BCC1VGS MINGW64 /d/STATHM/BBIT2/Y2.2/API/codes/Demo1 (master)
+$ git push -u origin master
+Enumerating objects: 20, done.
+Counting objects: 100% (20/20), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (19/19), done.
+Writing objects: 100% (20/20), 6.24 KiB | 2.08 MiB/s, done.
+Total 20 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), done.
+To https://github.com/kathembotsongo1987/assingment1.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
+hp@DESKTOP-BCC1VGS MINGW64 /d/STATHM/BBIT2/Y2.2/API/codes/Demo1 (master)
+$ touch LICENCE
+
+hp@DESKTOP-BCC1VGS MINGW64 /d/STATHM/BBIT2/Y2.2/API/codes/Demo1 (master)
+$ git add .
+
+hp@DESKTOP-BCC1VGS MINGW64 /d/STATHM/BBIT2/Y2.2/API/codes/Demo1 (master)
+$ git commit -m "added LICENCE file"
+[master cb2b2e5] added LICENCE file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 LICENCE
+
+hp@DESKTOP-BCC1VGS MINGW64 /d/STATHM/BBIT2/Y2.2/API/codes/Demo1 (master)
+$ git push -u origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 246 bytes | 246.00 KiB/s, done.
+Total 2 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+To https://github.com/kathembotsongo1987/assingment1.git
+   0bfe278..cb2b2e5  master -> master
+branch 'master' set up to track 'origin/master'.
+
+hp@DESKTOP-BCC1VGS MINGW64 /d/STATHM/BBIT2/Y2.2/API/codes/Demo1 (master)
+$
